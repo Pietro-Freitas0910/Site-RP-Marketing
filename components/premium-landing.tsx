@@ -100,6 +100,13 @@ const contentVideos = [
     posterLabel: "S10"
   },
   {
+    title: "Conteúdo interativo vertical",
+    label: "Conteúdo criativo",
+    src: "/assets/projetos/video-interativo-cobalt.mp4",
+    accent: "from-sky-300 to-blue-500",
+    posterLabel: "Projeto"
+  },
+  {
     title: "Videoclipe para redes sociais",
     label: "Captação e edição",
     src: "/assets/projetos/videoclipe.mp4",
