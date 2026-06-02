@@ -32,6 +32,8 @@ const whatsappHref =
   "https://wa.me/5543996365271?text=Ol%C3%A1%2C%20quero%20falar%20com%20a%20RP%20Marketing%20sobre%20posicionamento%20digital.";
 const instagramHref =
   "https://www.instagram.com/rp_.marketing?igsh=bnhlazVtYmdsczJl&utm_source=qr";
+const brCarInstagramHref =
+  "https://www.instagram.com/br.car.br?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==";
 
 const reveal: Variants = {
   hidden: { opacity: 0, y: 28, filter: "blur(10px)" },
@@ -100,7 +102,7 @@ const contentVideos = [
     posterLabel: "S10"
   },
   {
-    title: "Conteúdo interativo para redes sociais",
+    title: "Conteúdo vertical para campanhas",
     label: "Conteúdo criativo",
     src: "/assets/projetos/video-interativo-cobalt.mp4",
     accent: "from-sky-300 to-blue-500",
@@ -645,6 +647,42 @@ function InstagramResultsPanel() {
   );
 }
 
+function CurrentClientProof() {
+  return (
+    <motion.div
+      variants={reveal}
+      className="relative overflow-hidden rounded-3xl border border-cyan-200/15 bg-white/[0.045] p-5 shadow-[0_0_55px_rgba(0,191,255,0.12)] backdrop-blur-xl sm:p-7"
+    >
+      <div className="absolute inset-y-0 left-0 w-1 bg-gradient-to-b from-cyan-200 via-neon to-blue-500" />
+      <div className="absolute -right-16 -top-20 h-48 w-48 rounded-full bg-cyan-300/10 blur-3xl" />
+      <div className="relative flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+        <div className="max-w-3xl">
+          <p className="text-sm uppercase tracking-[0.22em] text-cyan-100">Cliente atual</p>
+          <h3 className="mt-3 font-display text-2xl font-semibold text-white sm:text-3xl">
+            Quer ver mais do nosso trabalho na prática?
+          </h3>
+          <p className="mt-3 leading-7 text-premium">
+            Atualmente, a RP Marketing atende a BRCAR SEMINOVOS - CAMBÉ com conteúdos,
+            posicionamento e presença digital. Acompanhe o perfil para ver publicações,
+            criativos e resultados sendo construídos no dia a dia.
+          </p>
+        </div>
+
+        <a
+          href={brCarInstagramHref}
+          target="_blank"
+          rel="noreferrer"
+          className="group inline-flex w-full items-center justify-center gap-3 rounded-full border border-cyan-200/30 bg-cyan-300/10 px-6 py-4 text-sm font-semibold text-white transition duration-300 hover:border-cyan-100/70 hover:bg-cyan-300/18 hover:shadow-[0_0_42px_rgba(0,191,255,0.25)] sm:w-auto"
+        >
+          <Instagram className="h-5 w-5 text-cyan-100" />
+          Ver perfil da BRCAR
+          <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+        </a>
+      </div>
+    </motion.div>
+  );
+}
+
 function BeforeAfterCharts() {
   return (
     <div className="mx-auto mt-12 grid max-w-7xl gap-4 px-5 sm:px-8 lg:grid-cols-2">
@@ -707,12 +745,16 @@ function ResultsSection() {
 
         <motion.div variants={stagger} className="mt-12 grid gap-5 lg:grid-cols-2">
           {contentVideos.map((item) => (
-            <VideoShowcaseCard key={item.title} item={item} />
+            <VideoShowcaseCard key={item.src} item={item} />
           ))}
         </motion.div>
 
         <div className="mt-5">
           <InstagramResultsPanel />
+        </div>
+
+        <div className="mt-5">
+          <CurrentClientProof />
         </div>
       </div>
 
