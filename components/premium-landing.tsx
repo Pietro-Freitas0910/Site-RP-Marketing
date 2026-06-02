@@ -662,7 +662,7 @@ function CurrentClientProof() {
             Quer ver mais do nosso trabalho na prática?
           </h3>
           <p className="mt-3 leading-7 text-premium">
-            Atualmente, a RP Marketing atende a BRCAR SEMINOVOS - CAMBÉ com conteúdos,
+            Atualmente, a RP Marketing atende a BR CAR SEMINOVOS - CAMBÉ com conteúdos,
             posicionamento e presença digital. Acompanhe o perfil para ver publicações,
             criativos e resultados sendo construídos no dia a dia.
           </p>
@@ -675,7 +675,7 @@ function CurrentClientProof() {
           className="group inline-flex w-full items-center justify-center gap-3 rounded-full border border-cyan-200/30 bg-cyan-300/10 px-6 py-4 text-sm font-semibold text-white transition duration-300 hover:border-cyan-100/70 hover:bg-cyan-300/18 hover:shadow-[0_0_42px_rgba(0,191,255,0.25)] sm:w-auto"
         >
           <Instagram className="h-5 w-5 text-cyan-100" />
-          Ver perfil da BRCAR
+          Ver perfil da BR CAR
           <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
         </a>
       </div>
